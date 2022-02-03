@@ -16,7 +16,7 @@
             <input type="submit" value="Submit">
     </form>
 
-<%--    <c:if test="${param.username == 'admin' && param.password == 'password'}">--%>
+    <%--    <c:if test="${param.username == 'admin' && param.password == 'password'}">--%>
 <%--        <% response.sendRedirect("/profile.jsp"); %>--%>
 <%--    </c:if>--%>
 <%--    <c:if test="${param.username == !'admin'}">--%>
