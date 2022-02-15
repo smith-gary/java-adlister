@@ -2,6 +2,7 @@ package com.codeup.adlister.controllers;
 
 import com.codeup.adlister.dao.DaoFactory;
 import com.codeup.adlister.models.User;
+import com.codeup.adlister.util.Password;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,7 +21,9 @@ public class RegisterServlet extends HttpServlet {
         String username = request.getParameter("username");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
+//        String hashedPw = Password.hash(password);
         String passwordConfirmation = request.getParameter("confirm_password");
+//        String hashedPwConfirmation = Password.hash(passwordConfirmation);
 
         // validate input
         boolean inputHasErrors = username.isEmpty()
